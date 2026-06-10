@@ -9,6 +9,10 @@ const users = [
   { id: 3, name: 'Cesar Montoya', email: 'cesar@email.com' }
 ];
 
+app.get('/', (req, res) => {
+  res.json({ status: 'ok', service: 'users' });
+});
+
 app.get('/health', (req, res) => {
   res.json({ status: 'ok', service: 'users' });
 });

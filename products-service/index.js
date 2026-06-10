@@ -8,6 +8,10 @@ const products = [
   { id: 2, name: 'Mouse', price: 45000 }
 ];
 
+app.get('/', (req, res) => {
+  res.json({ status: 'ok', service: 'products' });
+});
+
 app.get('/health', (req, res) => {
   res.json({ status: 'ok', service: 'products' });
 });
